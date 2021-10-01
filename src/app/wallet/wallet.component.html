@@ -1,0 +1,12 @@
+<div>
+  <p>Seu saldo em BitCoin: 
+    {{this.newWalletService.saldo}}
+  </p>
+  <p>Adicionar valor em Real:</p>
+  <input type="number" [(ngModel)]="saldoInput"/>
+</div>
+<div>
+  <input class="button" type="submit" value="Depositar" (click) ="newWalletService.depositar(saldoInput)">
+  <input class="button" type="submit" value="Sacar" (click) ="newWalletService.sacar(saldoInput)">
+  
+</div>
